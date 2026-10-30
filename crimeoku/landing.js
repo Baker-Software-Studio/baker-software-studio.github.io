@@ -42,7 +42,7 @@
   var items = [], layers = [], wallTop = 0, vTop = 0;
   var pageH = 0, footEl = document.querySelector('.foot');
   function measure() {
-    pageH = document.body.scrollHeight;
+    pageH = footEl ? docTop(footEl) + footEl.offsetHeight : document.documentElement.scrollHeight;
     items = Array.prototype.map.call(document.querySelectorAll('.rv'), function (el) {
       var d = parseFloat((el.style.getPropertyValue('--d') || '0').replace('s', '')) || 0;
       return { el: el, top: docTop(el), d: d, last: -1 };
@@ -55,7 +55,7 @@
 
   function update() {
     ticking = false;
-    var sc = document.body, vh = sc.clientHeight, y = sc.scrollTop, mobile = window.innerWidth < 700;
+    var vh = window.innerHeight, y = window.scrollY || window.pageYOffset, mobile = window.innerWidth < 700;
     var maxY = Math.max(1, pageH - vh);
     var span = vh * 0.36, i, it, start, end, p;
 
@@ -105,10 +105,10 @@
 
   var ticking = false;
   function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
-  document.body.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', function () { measure(); });
   window.addEventListener('load', measure);
   window.addEventListener('bk:lang', function () { setTimeout(measure, 80); });
-  if ('ResizeObserver' in window) (function () { var ro = new ResizeObserver(function () { measure(); }); Array.prototype.forEach.call(document.body.children, function (n) { ro.observe(n); }); })();
+  if ('ResizeObserver' in window) new ResizeObserver(function () { measure(); }).observe(document.body);
   measure();
 })();
