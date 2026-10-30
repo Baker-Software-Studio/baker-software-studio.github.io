@@ -36,7 +36,16 @@
     window.addEventListener('load', threads);
     window.addEventListener('bk:lang', function () { setTimeout(threads, 60); });
     threads();
+    if (vbox) {
+      var vr = vbox.getBoundingClientRect(), vc = vr.top + vr.height / 2;
+      if (vc < vh * 0.62) vbox.classList.add('solved');
+      else if (vc > vh * 0.82) vbox.classList.remove('solved');
+    }
   }
+
+  /* Veredicto reversible: se resuelve al subir hacia el centro de la pantalla y se deshace al volver hacia arriba */
+  var vbox = document.getElementById('verdictBox');
+  if (vbox && reduce) vbox.classList.add('solved');
 
   /* Parallax: cada .px se desplaza según su distancia al centro de la pantalla × data-depth */
   if (reduce) return;
@@ -53,6 +62,11 @@
       el.style.setProperty('--py', off.toFixed(1) + 'px');
     }
     threads();
+    if (vbox) {
+      var vr = vbox.getBoundingClientRect(), vc = vr.top + vr.height / 2;
+      if (vc < vh * 0.62) vbox.classList.add('solved');
+      else if (vc > vh * 0.82) vbox.classList.remove('solved');
+    }
   }
   function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
   window.addEventListener('scroll', onScroll, { passive: true });

@@ -169,16 +169,17 @@ h2{font:400 clamp(32px,5vw,52px)/1.08 var(--fh);color:var(--gold);margin:0 0 18p
 
 /* Veredicto: sello */
 .verdict{position:relative;width:min(520px,92vw);margin:56px auto 0;border-radius:10px;overflow:hidden;border:3px solid #6f8f4e;box-shadow:0 40px 80px -30px rgba(0,0,0,.95)}
-.vboard{width:100%;aspect-ratio:1;object-fit:cover;transition:filter .8s ease .5s}
-.verdict.in .vboard{filter:grayscale(1) brightness(.55)}
-.killer{position:absolute;left:50%;top:9%;translate:-50% 0;text-align:center;background:rgba(18,13,9,.82);border:1px solid #6b5536;padding:8px 22px 6px;opacity:0;transform:translateY(-14px);transition:.6s ease 2s;white-space:nowrap}
+.vboard{width:100%;aspect-ratio:1;object-fit:cover;transition:filter .8s ease .7s}
+.verdict.solved .vboard{filter:grayscale(1) brightness(.55);transition-delay:.5s}
+/* Entra: gris → sello → nombre. Sale (scroll hacia arriba): nombre → sello se despega → color vuelve. */
+.killer{position:absolute;left:50%;top:9%;translate:-50% 0;text-align:center;background:rgba(18,13,9,.82);border:1px solid #6b5536;padding:8px 22px 6px;opacity:0;transform:translateY(-14px);transition:opacity .35s ease 0s,transform .35s ease 0s;white-space:nowrap}
 .killer small{display:block;font:400 clamp(12px,2.4vw,16px) var(--fh);letter-spacing:.18em;text-transform:uppercase;color:#e9dcc0}
 .killer b{font:400 clamp(28px,6vw,46px)/1.1 var(--fh);color:#f3e7cb}
-.verdict.in .killer{opacity:1;transform:none}
-.stamp{position:absolute;left:50%;top:52%;translate:-50% -50%;rotate:-14deg;opacity:0;pointer-events:none}
+.verdict.solved .killer{opacity:1;transform:none;transition:opacity .6s ease 2s,transform .6s ease 2s}
+.stamp{position:absolute;left:50%;top:52%;translate:-50% -50%;rotate:-14deg;opacity:0;transform:scale(3.2);pointer-events:none;transition:opacity .4s ease .3s,transform .5s ease .3s}
 .stamp span{display:block;font:700 clamp(40px,10vw,78px)/1 var(--fc);letter-spacing:.06em;color:#d8382b;border:clamp(5px,1.1vw,8px) solid #d8382b;padding:.08em .22em .02em;border-radius:6px;background:rgba(216,56,43,.06);white-space:nowrap}
-.verdict.in .stamp{animation:slam .55s cubic-bezier(.3,1.6,.5,1) 1.1s both}
-.verdict.in{animation:shake .35s ease 1.4s}
+.verdict.solved .stamp{opacity:1;transform:scale(1);transition:opacity .2s ease 1.1s,transform .55s cubic-bezier(.3,1.6,.5,1) 1.1s}
+.verdict.solved{animation:shake .35s ease 1.4s}
 @keyframes slam{0%{opacity:0;transform:scale(3.2)}60%{opacity:1;transform:scale(.92)}100%{opacity:1;transform:scale(1)}}
 @keyframes shake{25%{transform:translate(-5px,3px)}50%{transform:translate(4px,-3px)}75%{transform:translate(-2px,2px)}}
 
@@ -217,6 +218,6 @@ h2{font:400 clamp(32px,5vw,52px)/1.08 var(--fh);color:var(--gold);margin:0 0 18p
   .thread path{stroke-dashoffset:0;transition:none}
   .verdict .vboard{filter:grayscale(1) brightness(.55)!important;transition:none!important}
   .verdict .killer{opacity:1!important;transform:none!important;transition:none!important}
-  .verdict .stamp{opacity:1!important;animation:none!important}
+  .verdict .stamp{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}
   .verdict{animation:none!important}
 }
