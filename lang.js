@@ -22,6 +22,7 @@
       'cr.desc': 'A logic deduction game. Every case is a crime scene with areas, objects, suspects and a victim: place each character using their clues — no two share a row or column — and uncover who the killer was.',
       'cr.l1': 'Endless randomly generated cases, from 5×5 to 24×24', 'cr.l2': 'Houses, museums, zoos, casinos, castles and more',
       'cr.l3': 'Step-by-step hints that teach the reasoning', 'cr.l4': 'In 7 languages, playable offline',
+      'cr.more': 'Discover Crimeoku',
       'cr.soon': 'Coming soon to Google Play', 'cr.priv': 'Privacy policy', 'foot.priv': 'Crimeoku privacy policy'
     },
     es: {
@@ -40,6 +41,7 @@
       'cr.desc': 'Un juego de deducción lógica. Cada caso es una escena del crimen con áreas, objetos, sospechosos y una víctima: ubicá a cada personaje según sus pistas —nadie comparte fila ni columna— y descubrí quién era el asesino.',
       'cr.l1': 'Casos infinitos generados al azar, de 5×5 a 24×24', 'cr.l2': 'Casas, museos, zoológicos, casinos, castillos y más',
       'cr.l3': 'Pistas paso a paso que enseñan el razonamiento', 'cr.l4': 'En 7 idiomas, se juega sin conexión',
+      'cr.more': 'Conocé Crimeoku',
       'cr.soon': 'Muy pronto en Google Play', 'cr.priv': 'Política de privacidad', 'foot.priv': 'Privacidad de Crimeoku'
     },
     pt: {
@@ -58,6 +60,7 @@
       'cr.desc': 'Um jogo de dedução lógica. Cada caso é uma cena de crime com áreas, objetos, suspeitos e uma vítima: posicione cada personagem de acordo com as pistas — ninguém divide a mesma linha ou coluna — e descubra quem era o assassino.',
       'cr.l1': 'Casos infinitos gerados aleatoriamente, de 5×5 a 24×24', 'cr.l2': 'Casas, museus, zoológicos, cassinos, castelos e muito mais',
       'cr.l3': 'Dicas passo a passo que ensinam o raciocínio', 'cr.l4': 'Em 7 idiomas, funciona sem internet',
+      'cr.more': 'Conheça o Crimeoku',
       'cr.soon': 'Em breve no Google Play', 'cr.priv': 'Política de privacidade', 'foot.priv': 'Política de privacidade do Crimeoku'
     },
     fr: {
@@ -76,6 +79,7 @@
       'cr.desc': 'Un jeu de déduction logique. Chaque affaire est une scène de crime avec des zones, des objets, des suspects et une victime : placez chaque personnage grâce à ses indices — deux personnages ne partagent jamais la même ligne ni la même colonne — et découvrez qui était l’assassin.',
       'cr.l1': 'Des affaires illimitées générées au hasard, de 5×5 à 24×24', 'cr.l2': 'Maisons, musées, zoos, casinos, châteaux et bien plus',
       'cr.l3': 'Des indices pas à pas qui enseignent le raisonnement', 'cr.l4': 'En 7 langues, jouable hors ligne',
+      'cr.more': 'Découvrir Crimeoku',
       'cr.soon': 'Bientôt sur Google Play', 'cr.priv': 'Politique de confidentialité', 'foot.priv': 'Politique de confidentialité de Crimeoku'
     },
     de: {
@@ -94,6 +98,7 @@
       'cr.desc': 'Ein Logik-Deduktionsspiel. Jeder Fall ist ein Tatort mit Bereichen, Gegenständen, Verdächtigen und einem Opfer: Platziere jede Figur anhand ihrer Hinweise – keine zwei teilen sich eine Zeile oder Spalte – und finde heraus, wer der Mörder war.',
       'cr.l1': 'Unendlich viele zufällig erzeugte Fälle, von 5×5 bis 24×24', 'cr.l2': 'Häuser, Museen, Zoos, Casinos, Burgen und mehr',
       'cr.l3': 'Hinweise Schritt für Schritt, die das Schlussfolgern beibringen', 'cr.l4': 'In 7 Sprachen, auch offline spielbar',
+      'cr.more': 'Crimeoku entdecken',
       'cr.soon': 'Bald bei Google Play', 'cr.priv': 'Datenschutzerklärung', 'foot.priv': 'Datenschutzerklärung von Crimeoku'
     },
     it: {
@@ -112,6 +117,7 @@
       'cr.desc': 'Un gioco di deduzione logica. Ogni caso è una scena del crimine con aree, oggetti, sospettati e una vittima: posiziona ogni personaggio in base ai suoi indizi — due personaggi non condividono mai la stessa riga o colonna — e scopri chi era l’assassino.',
       'cr.l1': 'Casi infiniti generati a caso, da 5×5 a 24×24', 'cr.l2': 'Case, musei, zoo, casinò, castelli e altro ancora',
       'cr.l3': 'Indizi passo dopo passo che insegnano il ragionamento', 'cr.l4': 'In 7 lingue, si gioca anche offline',
+      'cr.more': 'Scopri Crimeoku',
       'cr.soon': 'Presto su Google Play', 'cr.priv': 'Informativa sulla privacy', 'foot.priv': 'Informativa sulla privacy di Crimeoku'
     },
     ro: {
@@ -130,9 +136,13 @@
       'cr.desc': 'Un joc de deducție logică. Fiecare caz este o scenă a crimei cu zone, obiecte, suspecți și o victimă: așază fiecare personaj după indiciile lui — două personaje nu împart niciodată același rând sau aceeași coloană — și descoperă cine a fost ucigașul.',
       'cr.l1': 'Cazuri nesfârșite generate aleatoriu, de la 5×5 la 24×24', 'cr.l2': 'Case, muzee, grădini zoologice, cazinouri, castele și multe altele',
       'cr.l3': 'Indicii pas cu pas care te învață raționamentul', 'cr.l4': 'În 7 limbi, se joacă și fără internet',
+      'cr.more': 'Descoperă Crimeoku',
       'cr.soon': 'În curând pe Google Play', 'cr.priv': 'Politica de confidențialitate', 'foot.priv': 'Politica de confidențialitate Crimeoku'
     }
   };
+
+  /* Textos propios de cada página (p. ej. la landing de Crimeoku) */
+  if (window.BK_I18N) LANGS.forEach(function (x) { var e = window.BK_I18N[x] || {}; for (var k in e) D[x][k] = e[k]; });
 
   var d = document.documentElement, l = null;
   try { l = localStorage.getItem('bk:lang'); } catch (e) {}
@@ -150,6 +160,9 @@
   function apply() {
     document.querySelectorAll('[data-k]').forEach(function (el) { el.innerHTML = t(el.getAttribute('data-k')); });
     var tk = d.getAttribute('data-tk'); if (tk) document.title = t(tk);
+    /* Imágenes por idioma: data-img="img/{l}/play.webp" */
+    document.querySelectorAll('[data-img]').forEach(function (el) { var u = el.getAttribute('data-img').replace('{l}', d.lang); if (el.getAttribute('src') !== u) el.setAttribute('src', u); });
+    document.dispatchEvent(new CustomEvent('bk:lang', { detail: d.lang }));
     var s = document.getElementById('selLang'); if (s) s.value = d.lang;
   }
   document.addEventListener('DOMContentLoaded', function () {

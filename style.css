@@ -107,3 +107,10 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 
 [data-l]{display:none}
 html[lang="en"] [data-l="en"],html[lang="es"] [data-l="es"],html[lang="pt"] [data-l="pt"],html[lang="fr"] [data-l="fr"],html[lang="de"] [data-l="de"],html[lang="it"] [data-l="it"],html[lang="ro"] [data-l="ro"]{display:block}
+.app .shot{display:block}
+.app h3 a{color:inherit;text-decoration:none}
+.app .btn.gold{background:var(--crime-gold);color:#1b1409}
+.app .btn.gold:hover{background:#e3bb63}
+/* La frase va como texto sobre la imagen (sin frase) para poder traducirla */
+.app .shot{position:relative;container-type:inline-size;text-decoration:none}
+.app .shot .slogan{position:absolute;left:5.1%;top:56.2%;font:400 2.93cqw/1.2 'Special Elite','Courier New',monospace;color:#e9dcc0;white-space:nowrap}
