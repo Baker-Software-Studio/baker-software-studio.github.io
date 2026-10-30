@@ -109,3 +109,6 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 
 [data-l]{display:none}
 html[lang="en"] [data-l="en"],html[lang="es"] [data-l="es"]{display:revert}
+/* La frase va como texto sobre la imagen (sin frase) para poder traducirla */
+.app .shot{position:relative;container-type:inline-size}
+.app .shot .slogan{position:absolute;left:5.1%;top:56.2%;font:400 2.93cqw/1.2 'Special Elite','Courier New',monospace;color:#e9dcc0;white-space:nowrap}
