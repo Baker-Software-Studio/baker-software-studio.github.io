@@ -21,9 +21,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .nav{display:flex;align-items:center;gap:22px}
 .nav a.lnk{color:var(--graphite);text-decoration:none;font:500 15px var(--fb)}
 .nav a.lnk:hover{color:var(--ink)}
-.lang{display:flex;gap:2px;border:1px solid var(--line);border-radius:8px;padding:3px;background:var(--surface)}
-.lang button{font:600 12px var(--fb);letter-spacing:.04em;border:0;background:none;color:var(--muted);padding:5px 9px;border-radius:5px;cursor:pointer}
-.lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.lang{font:600 13px var(--fb);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;cursor:pointer;max-width:130px}
 @media (max-width:560px){.nav a.lnk{display:none}}
 
 /* Portada */
@@ -108,7 +106,4 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 .doc .back{font-size:15px;text-decoration:none}
 
 [data-l]{display:none}
-html[lang="en"] [data-l="en"],html[lang="es"] [data-l="es"]{display:revert}
-/* La frase va como texto sobre la imagen (sin frase) para poder traducirla */
-.app .shot{position:relative;container-type:inline-size}
-.app .shot .slogan{position:absolute;left:5.1%;top:56.2%;font:400 2.93cqw/1.2 'Special Elite','Courier New',monospace;color:#e9dcc0;white-space:nowrap}
+html[lang="en"] [data-l="en"],html[lang="es"] [data-l="es"],html[lang="pt"] [data-l="pt"],html[lang="fr"] [data-l="fr"],html[lang="de"] [data-l="de"],html[lang="it"] [data-l="it"],html[lang="ro"] [data-l="ro"]{display:block}

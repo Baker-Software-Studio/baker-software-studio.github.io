@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-title-en="Bakersoft — Software studio" data-title-es="Bakersoft — Estudio de software">
+<html lang="en" data-tk="t.home">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -23,9 +23,9 @@
   <div class="wrap">
     <a class="brand" href="./"><img src="img/bakersoft-cube-256.png" width="30" height="35" alt="">Bakersoft</a>
     <nav class="nav">
-      <a class="lnk" href="#what"><span data-l="en">What we do</span><span data-l="es">Qué hacemos</span></a>
-      <a class="lnk" href="#products"><span data-l="en">Products</span><span data-l="es">Productos</span></a>
-      <div class="lang" role="group" aria-label="Language / Idioma"><button type="button" data-set="en">EN</button><button type="button" data-set="es">ES</button></div>
+      <a class="lnk" href="#what" data-k="nav.what">What we do</a>
+      <a class="lnk" href="#products" data-k="nav.products">Products</a>
+      <select id="selLang" class="lang" aria-label="Language / Idioma"></select>
     </nav>
   </div>
 </header>
@@ -33,12 +33,12 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="kicker"><span data-l="en">Software studio</span><span data-l="es">Estudio de software</span></p>
-      <h1><span data-l="en">Software for <span class="c">play</span> and for work.</span><span data-l="es">Software para <span class="c">jugar</span> y para trabajar.</span></h1>
-      <p class="lead"><span data-l="en">Bakersoft is an independent software studio. We design and build mobile games and apps for Android and iOS, from the first idea to the store.</span><span data-l="es">Bakersoft es un estudio de software independiente. Diseñamos y desarrollamos juegos y apps para Android y iOS, desde la primera idea hasta la tienda.</span></p>
+      <p class="kicker" data-k="hero.kicker">Software studio</p>
+      <h1 data-k="hero.h1">Software for <span class="c">play</span> and for work.</h1>
+      <p class="lead" data-k="hero.lead">Bakersoft is an independent software studio. We design and build mobile games and apps for Android and iOS, from the first idea to the store.</p>
       <div class="cta">
-        <a class="btn primary" href="#products"><span data-l="en">See our products</span><span data-l="es">Ver productos</span> →</a>
-        <a class="btn outline" href="#what"><span data-l="en">What we do</span><span data-l="es">Qué hacemos</span></a>
+        <a class="btn primary" href="#products"><span data-k="cta.products">See our products</span> →</a>
+        <a class="btn outline" href="#what" data-k="cta.what">What we do</a>
       </div>
     </div>
     <div class="mark"><img src="img/bakersoft-cube.png" width="658" height="766" alt="Bakersoft"></div>
@@ -48,24 +48,24 @@
 <section class="block" id="what">
   <div class="wrap">
     <div class="sec-head">
-      <h2><span data-l="en">What we do</span><span data-l="es">Qué hacemos</span></h2>
-      <p><span data-l="en">We take care of every part of the product: design, development, art and publishing.</span><span data-l="es">Nos encargamos de cada parte del producto: diseño, desarrollo, arte y publicación.</span></p>
+      <h2 data-k="what.h2">What we do</h2>
+      <p data-k="what.p">We take care of every part of the product: design, development, art and publishing.</p>
     </div>
     <div class="pillars">
       <div class="pillar">
         <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/></svg></div>
-        <h3><span data-l="en">Games</span><span data-l="es">Juegos</span></h3>
-        <p><span data-l="en">Puzzle and logic games with fair challenges, built to be played again and again.</span><span data-l="es">Juegos de ingenio y lógica con desafíos justos, pensados para jugarse una y otra vez.</span></p>
+        <h3 data-k="p1.h">Games</h3>
+        <p data-k="p1.p">Puzzle and logic games with fair challenges, built to be played again and again.</p>
       </div>
       <div class="pillar">
         <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></svg></div>
-        <h3><span data-l="en">Apps</span><span data-l="es">Apps</span></h3>
-        <p><span data-l="en">Practical tools that solve everyday problems with a clear, simple interface.</span><span data-l="es">Herramientas prácticas que resuelven problemas del día a día con una interfaz clara y simple.</span></p>
+        <h3 data-k="p2.h">Apps</h3>
+        <p data-k="p2.p">Practical tools that solve everyday problems with a clear, simple interface.</p>
       </div>
       <div class="pillar">
         <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
-        <h3><span data-l="en">Android and iOS</span><span data-l="es">Android y iOS</span></h3>
-        <p><span data-l="en">Apps for Google Play and the App Store, available in several languages.</span><span data-l="es">Apps para Google Play y el App Store, disponibles en varios idiomas.</span></p>
+        <h3 data-k="p3.h">Android and iOS</h3>
+        <p data-k="p3.p">Apps for Google Play and the App Store, available in several languages.</p>
       </div>
     </div>
   </div>
@@ -74,27 +74,27 @@
 <section class="block" id="products">
   <div class="wrap">
     <div class="sec-head">
-      <h2><span data-l="en">Products</span><span data-l="es">Productos</span></h2>
-      <p><span data-l="en">What we’re working on.</span><span data-l="es">En lo que estamos trabajando.</span></p>
+      <h2 data-k="prod.h2">Products</h2>
+      <p data-k="prod.p">What we’re working on.</p>
     </div>
 
     <article class="app" id="crimeoku">
-      <div class="shot"><img src="img/crimeoku-banner-clean.jpg" width="1024" height="500" alt="Crimeoku"><span class="slogan"><span data-l="en">Find the killer</span><span data-l="es">Encontrá al asesino</span></span></div>
+      <div class="shot"><img src="img/crimeoku-banner-clean.jpg" width="1024" height="500" alt="Crimeoku"><span class="slogan" data-k="cr.tag">Find the killer</span></div>
       <div class="body">
         <div class="head">
           <img src="img/crimeoku-icon.png" width="56" height="56" alt="">
-          <div><h3>CRIMEOKU</h3><p class="tag"><span data-l="en">Find the killer</span><span data-l="es">Encontrá al asesino</span></p></div>
+          <div><h3>CRIMEOKU</h3><p class="tag" data-k="cr.tag">Find the killer</p></div>
         </div>
-        <p><span data-l="en">A logic deduction game. Every case is a crime scene with areas, objects, suspects and a victim: place each character using their clues — no two share a row or column — and uncover who the killer was.</span><span data-l="es">Un juego de deducción lógica. Cada caso es una escena del crimen con áreas, objetos, sospechosos y una víctima: ubicá a cada personaje según sus pistas —nadie comparte fila ni columna— y descubrí quién era el asesino.</span></p>
+        <p data-k="cr.desc">A logic deduction game. Every case is a crime scene with areas, objects, suspects and a victim: place each character using their clues — no two share a row or column — and uncover who the killer was.</p>
         <ul>
-          <li><span data-l="en">Endless randomly generated cases, from 5×5 to 24×24</span><span data-l="es">Casos infinitos generados al azar, de 5×5 a 24×24</span></li>
-          <li><span data-l="en">Houses, museums, zoos, casinos, castles and more</span><span data-l="es">Casas, museos, zoológicos, casinos, castillos y más</span></li>
-          <li><span data-l="en">Step-by-step hints that teach the reasoning</span><span data-l="es">Pistas paso a paso que enseñan el razonamiento</span></li>
-          <li><span data-l="en">In 7 languages, playable offline</span><span data-l="es">En 7 idiomas, se juega sin conexión</span></li>
+          <li data-k="cr.l1">Endless randomly generated cases, from 5×5 to 24×24</li>
+          <li data-k="cr.l2">Houses, museums, zoos, casinos, castles and more</li>
+          <li data-k="cr.l3">Step-by-step hints that teach the reasoning</li>
+          <li data-k="cr.l4">In 7 languages, playable offline</li>
         </ul>
         <div class="acts">
-          <span class="soon"><span data-l="en">Coming soon to Google Play</span><span data-l="es">Muy pronto en Google Play</span></span>
-          <a class="btn ghost" href="crimeoku/privacy/"><span data-l="en">Privacy policy</span><span data-l="es">Política de privacidad</span></a>
+          <span class="soon" data-k="cr.soon">Coming soon to Google Play</span>
+          <a class="btn ghost" href="crimeoku/privacy/" data-k="cr.priv">Privacy policy</a>
         </div>
       </div>
     </article>
@@ -105,7 +105,7 @@
   <div class="wrap">
     <a class="brand" href="./"><img src="img/bakersoft-cube-256.png" width="26" height="30" alt="">Bakersoft</a>
     <nav>
-      <a href="crimeoku/privacy/"><span data-l="en">Crimeoku privacy policy</span><span data-l="es">Privacidad de Crimeoku</span></a>
+      <a href="crimeoku/privacy/" data-k="foot.priv">Crimeoku privacy policy</a>
       <a href="mailto:bakersoftwarestudio@gmail.com">bakersoftwarestudio@gmail.com</a>
       <a href="https://github.com/Baker-Software-Studio">GitHub</a>
     </nav>
