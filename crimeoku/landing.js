@@ -3,6 +3,15 @@
    - .px: parallax (--py).
    - Hilos de la pared y veredicto: también guiados por el scroll. */
 (function () {
+  /* Sin zoom por pellizco ni doble toque: arruinaría las capas y el parallax (iOS ignora user-scalable, por eso los gestos) */
+  ['gesturestart', 'gesturechange', 'gestureend'].forEach(function (t) {
+    document.addEventListener(t, function (e) { e.preventDefault(); }, { passive: false });
+  });
+  document.addEventListener('touchmove', function (e) { if (e.touches && e.touches.length > 1) e.preventDefault(); }, { passive: false });
+  var lastTap = 0;
+  document.addEventListener('touchend', function (e) {
+    var n = Date.now(); if (n - lastTap < 300) e.preventDefault(); lastTap = n;
+  }, { passive: false });
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var wall = document.querySelector('.board-wall');
   var vbox = document.getElementById('verdictBox');
