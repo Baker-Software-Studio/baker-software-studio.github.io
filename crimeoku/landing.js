@@ -3,6 +3,10 @@
    - .px: parallax (--py).
    - Hilos de la pared y veredicto: también guiados por el scroll. */
 (function () {
+  /* Tras recargar con "tirar para actualizar" el navegador puede dejar la página corrida unos 59px (la altura de la zona de la cámara): se vuelve al tope */
+  function fixTop() { var y = window.scrollY || window.pageYOffset || 0; if (y > 0 && y < 160) window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); }
+  window.addEventListener('pageshow', function () { fixTop(); setTimeout(fixTop, 120); });
+  window.addEventListener('load', function () { fixTop(); setTimeout(fixTop, 250); });
   /* Sin zoom por pellizco ni doble toque: arruinaría las capas y el parallax (iOS ignora user-scalable, por eso los gestos; el doble toque lo cubre touch-action) */
   ['gesturestart', 'gesturechange', 'gestureend'].forEach(function (t) {
     document.addEventListener(t, function (e) { e.preventDefault(); }, { passive: false });
