@@ -1,41 +1,89 @@
 <!doctype html>
-<html lang="en" data-title-en="Bakersoft — Games and apps" data-title-es="Bakersoft — Juegos y apps">
+<html lang="en" data-title-en="Bakersoft — Software studio" data-title-es="Bakersoft — Estudio de software">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bakersoft — Games and apps</title>
-<meta name="description" content="Bakersoft is an independent studio making puzzle games and apps. Home of Crimeoku, the deduction game where you find the killer.">
-<meta property="og:title" content="Bakersoft">
-<meta property="og:description" content="Independent studio making puzzle games and apps. Home of Crimeoku.">
-<meta property="og:image" content="https://baker-software-studio.github.io/img/crimeoku-feature.jpg">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Bakersoft — Software studio</title>
+<meta name="description" content="Bakersoft is an independent software studio that designs and builds mobile games and apps for Android and iOS. Makers of Crimeoku.">
+<meta name="theme-color" content="#f6f5f2">
+<meta property="og:title" content="Bakersoft — Software studio">
+<meta property="og:description" content="Independent software studio building mobile games and apps for Android and iOS.">
+<meta property="og:image" content="https://baker-software-studio.github.io/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Instrument+Sans:wght@400;600&family=Special+Elite&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="lang.js"></script>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="brand" href="./"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#c4612a"/><path d="M12 40c0-11 9-20 20-20s20 9 20 20v4a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4z" fill="#fff6e8"/><path d="M22 31l5 9M31 27l5 11M40 30l4 8" stroke="#c4612a" stroke-width="3.2" stroke-linecap="round"/></svg>Bakersoft</a>
-    <div class="lang" role="group" aria-label="Language / Idioma"><button type="button" data-set="en">EN</button><button type="button" data-set="es">ES</button></div>
-  </header>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/bakersoft-cube-256.png" width="30" height="35" alt="">Bakersoft</a>
+    <nav class="nav">
+      <a class="lnk" href="#what"><span data-l="en">What we do</span><span data-l="es">Qué hacemos</span></a>
+      <a class="lnk" href="#products"><span data-l="en">Products</span><span data-l="es">Productos</span></a>
+      <div class="lang" role="group" aria-label="Language / Idioma"><button type="button" data-set="en">EN</button><button type="button" data-set="es">ES</button></div>
+    </nav>
+  </div>
+</header>
 
-  <section class="hero">
-    <h1><span data-l="en">Small games, <em>baked</em> with care.</span><span data-l="es">Juegos chicos, <em>horneados</em> con cuidado.</span></h1>
-    <p><span data-l="en">Bakersoft is an independent studio making puzzle games and apps for Android and iOS.</span><span data-l="es">Bakersoft es un estudio independiente que hace juegos de ingenio y apps para Android y iOS.</span></p>
-  </section>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker"><span data-l="en">Software studio</span><span data-l="es">Estudio de software</span></p>
+      <h1><span data-l="en">Software for <span class="c">play</span> and for work.</span><span data-l="es">Software para <span class="c">jugar</span> y para trabajar.</span></h1>
+      <p class="lead"><span data-l="en">Bakersoft is an independent software studio. We design and build mobile games and apps for Android and iOS, from the first idea to the store.</span><span data-l="es">Bakersoft es un estudio de software independiente. Diseñamos y desarrollamos juegos y apps para Android y iOS, desde la primera idea hasta la tienda.</span></p>
+      <div class="cta">
+        <a class="btn primary" href="#products"><span data-l="en">See our products</span><span data-l="es">Ver productos</span> →</a>
+        <a class="btn outline" href="#what"><span data-l="en">What we do</span><span data-l="es">Qué hacemos</span></a>
+      </div>
+    </div>
+    <div class="mark"><img src="img/bakersoft-cube.png" width="658" height="766" alt="Bakersoft"></div>
+  </div>
+</section>
 
-  <section class="apps">
-    <p class="eyebrow"><span data-l="en">Our games</span><span data-l="es">Nuestros juegos</span></p>
+<section class="block" id="what">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span data-l="en">What we do</span><span data-l="es">Qué hacemos</span></h2>
+      <p><span data-l="en">We take care of every part of the product: design, development, art and publishing.</span><span data-l="es">Nos encargamos de cada parte del producto: diseño, desarrollo, arte y publicación.</span></p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/></svg></div>
+        <h3><span data-l="en">Games</span><span data-l="es">Juegos</span></h3>
+        <p><span data-l="en">Puzzle and logic games with fair challenges, built to be played again and again.</span><span data-l="es">Juegos de ingenio y lógica con desafíos justos, pensados para jugarse una y otra vez.</span></p>
+      </div>
+      <div class="pillar">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></svg></div>
+        <h3><span data-l="en">Apps</span><span data-l="es">Apps</span></h3>
+        <p><span data-l="en">Practical tools that solve everyday problems with a clear, simple interface.</span><span data-l="es">Herramientas prácticas que resuelven problemas del día a día con una interfaz clara y simple.</span></p>
+      </div>
+      <div class="pillar">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+        <h3><span data-l="en">Android and iOS</span><span data-l="es">Android y iOS</span></h3>
+        <p><span data-l="en">Apps for Google Play and the App Store, available in several languages.</span><span data-l="es">Apps para Google Play y el App Store, disponibles en varios idiomas.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="products">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span data-l="en">Products</span><span data-l="es">Productos</span></h2>
+      <p><span data-l="en">What we’re working on.</span><span data-l="es">En lo que estamos trabajando.</span></p>
+    </div>
 
     <article class="app" id="crimeoku">
       <div class="shot"><img src="img/crimeoku-feature.jpg" width="1024" height="500" alt="Crimeoku"></div>
       <div class="body">
         <div class="head">
           <img src="img/crimeoku-icon.png" width="56" height="56" alt="">
-          <div><h2>CRIMEOKU</h2><p class="tag"><span data-l="en">Find the killer</span><span data-l="es">Encontrá al asesino</span></p></div>
+          <div><h3>CRIMEOKU</h3><p class="tag"><span data-l="en">Find the killer</span><span data-l="es">Encontrá al asesino</span></p></div>
         </div>
         <p><span data-l="en">A logic deduction game. Every case is a crime scene with areas, objects, suspects and a victim: place each character using their clues — no two share a row or column — and uncover who the killer was.</span><span data-l="es">Un juego de deducción lógica. Cada caso es una escena del crimen con áreas, objetos, sospechosos y una víctima: ubicá a cada personaje según sus pistas —nadie comparte fila ni columna— y descubrí quién era el asesino.</span></p>
         <ul>
@@ -50,13 +98,17 @@
         </div>
       </div>
     </article>
-  </section>
-</div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
+    <a class="brand" href="./"><img src="img/bakersoft-cube-256.png" width="26" height="30" alt="">Bakersoft</a>
+    <nav>
+      <a href="crimeoku/privacy/"><span data-l="en">Crimeoku privacy policy</span><span data-l="es">Privacidad de Crimeoku</span></a>
+      <a href="https://github.com/Baker-Software-Studio">GitHub</a>
+    </nav>
     <span>© 2026 Bakersoft</span>
-    <span><a href="crimeoku/privacy/"><span data-l="en">Crimeoku privacy policy</span><span data-l="es">Privacidad de Crimeoku</span></a></span>
   </div>
 </footer>
 </body>
