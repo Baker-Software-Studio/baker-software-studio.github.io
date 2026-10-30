@@ -1,0 +1,4 @@
+# app-ads.txt de Bakersoft
+# Cuando tengas la cuenta de AdMob, reemplazá estas líneas por la que te da AdMob
+# (Apps → Ver todas las apps → app-ads.txt). Tiene esta forma:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
