@@ -3,15 +3,10 @@
    - .px: parallax (--py).
    - Hilos de la pared y veredicto: también guiados por el scroll. */
 (function () {
-  /* Sin zoom por pellizco ni doble toque: arruinaría las capas y el parallax (iOS ignora user-scalable, por eso los gestos) */
+  /* Sin zoom por pellizco ni doble toque: arruinaría las capas y el parallax (iOS ignora user-scalable, por eso los gestos; el doble toque lo cubre touch-action) */
   ['gesturestart', 'gesturechange', 'gestureend'].forEach(function (t) {
     document.addEventListener(t, function (e) { e.preventDefault(); }, { passive: false });
   });
-  document.addEventListener('touchmove', function (e) { if (e.touches && e.touches.length > 1) e.preventDefault(); }, { passive: false });
-  var lastTap = 0;
-  document.addEventListener('touchend', function (e) {
-    var n = Date.now(); if (n - lastTap < 300) e.preventDefault(); lastTap = n;
-  }, { passive: false });
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var wall = document.querySelector('.board-wall');
   var vbox = document.getElementById('verdictBox');
@@ -45,7 +40,9 @@
 
   /* Posiciones en el documento (no se ven afectadas por las transformaciones de la animación) */
   var items = [], layers = [], wallTop = 0, vTop = 0;
+  var pageH = 0, footEl = document.querySelector('.foot');
   function measure() {
+    pageH = footEl ? docTop(footEl) + footEl.offsetHeight : document.documentElement.scrollHeight;
     items = Array.prototype.map.call(document.querySelectorAll('.rv'), function (el) {
       var d = parseFloat((el.style.getPropertyValue('--d') || '0').replace('s', '')) || 0;
       return { el: el, top: docTop(el), d: d, last: -1 };
@@ -59,7 +56,7 @@
   function update() {
     ticking = false;
     var vh = window.innerHeight, y = window.scrollY || window.pageYOffset, mobile = window.innerWidth < 700;
-    var maxY = Math.max(1, document.documentElement.scrollHeight - vh);
+    var maxY = Math.max(1, pageH - vh);
     var span = vh * 0.36, i, it, start, end, p;
 
     /* Aparición: empieza al asomar por abajo y termina cuando ya está a ~55% de la pantalla;
