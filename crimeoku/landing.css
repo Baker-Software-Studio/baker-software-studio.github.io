@@ -17,7 +17,9 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;op
 
 /* Barra superior */
 .bar{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:calc(12px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 12px max(16px,env(safe-area-inset-left));
-  background:linear-gradient(rgba(15,11,8,.92) calc(env(safe-area-inset-top) + 8px),rgba(15,11,8,0));pointer-events:none}
+  background:#0f0b08;pointer-events:none}
+/* barra opaca (Safari tiñe la zona de la cámara con el color del elemento fijo de arriba) + difuminado hacia el contenido */
+.bar::after{content:"";position:absolute;left:0;right:0;top:100%;height:26px;background:linear-gradient(#0f0b08,rgba(15,11,8,0));pointer-events:none}
 .bar>*{pointer-events:auto}
 .home{display:inline-flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font:600 14px var(--fb);opacity:.85}
 .home:hover{opacity:1}
