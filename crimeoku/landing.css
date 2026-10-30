@@ -11,9 +11,8 @@ body{touch-action:pan-x pan-y}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--fb);overflow-x:hidden}
 img{display:block;max-width:100%;height:auto}
 a{color:var(--gold)}
-/* grano de papel sobre todo el sitio */
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.06;mix-blend-mode:overlay;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+/* grano de papel: va en el fondo del body (con opacidad dentro del SVG). La capa fija a pantalla completa con mix-blend-mode impedía que la barra cubriera la zona de la cámara en iOS */
+body{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E")}
 
 /* Barra superior */
 /* La barra es 120px más alta y sube con top negativo: así su fondo también cubre la zona de la cámara/reloj, sin cambiar dónde se ven los botones */
