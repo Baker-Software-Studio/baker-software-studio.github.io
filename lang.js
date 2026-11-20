@@ -23,7 +23,7 @@
       'cr.l1': 'Endless randomly generated cases, from 5×5 to 24×24', 'cr.l2': 'Houses, museums, zoos, casinos, castles and more',
       'cr.l3': 'Step-by-step hints that teach the reasoning', 'cr.l4': 'In 7 languages, playable offline',
       'cr.more': 'Discover Crimeoku',
-      'cr.soon': 'Coming soon to Google Play', 'cr.priv': 'Privacy policy', 'foot.priv': 'Crimeoku privacy policy'
+      'cr.soon': 'Available on Google Play', 'cr.priv': 'Privacy policy', 'foot.priv': 'Crimeoku privacy policy'
     },
     es: {
       't.home': 'Bakersoft — Estudio de software', 't.priv': 'Crimeoku — Política de privacidad',
@@ -42,7 +42,7 @@
       'cr.l1': 'Casos infinitos generados al azar, de 5×5 a 24×24', 'cr.l2': 'Casas, museos, zoológicos, casinos, castillos y más',
       'cr.l3': 'Pistas paso a paso que enseñan el razonamiento', 'cr.l4': 'En 7 idiomas, se juega sin conexión',
       'cr.more': 'Conocé Crimeoku',
-      'cr.soon': 'Muy pronto en Google Play', 'cr.priv': 'Política de privacidad', 'foot.priv': 'Privacidad de Crimeoku'
+      'cr.soon': 'Disponible en Google Play', 'cr.priv': 'Política de privacidad', 'foot.priv': 'Privacidad de Crimeoku'
     },
     pt: {
       't.home': 'Bakersoft — Estúdio de software', 't.priv': 'Crimeoku — Política de privacidade',
@@ -61,7 +61,7 @@
       'cr.l1': 'Casos infinitos gerados aleatoriamente, de 5×5 a 24×24', 'cr.l2': 'Casas, museus, zoológicos, cassinos, castelos e muito mais',
       'cr.l3': 'Dicas passo a passo que ensinam o raciocínio', 'cr.l4': 'Em 7 idiomas, funciona sem internet',
       'cr.more': 'Conheça o Crimeoku',
-      'cr.soon': 'Em breve no Google Play', 'cr.priv': 'Política de privacidade', 'foot.priv': 'Política de privacidade do Crimeoku'
+      'cr.soon': 'Disponível no Google Play', 'cr.priv': 'Política de privacidade', 'foot.priv': 'Política de privacidade do Crimeoku'
     },
     fr: {
       't.home': 'Bakersoft — Studio de logiciels', 't.priv': 'Crimeoku — Politique de confidentialité',
@@ -80,7 +80,7 @@
       'cr.l1': 'Des affaires illimitées générées au hasard, de 5×5 à 24×24', 'cr.l2': 'Maisons, musées, zoos, casinos, châteaux et bien plus',
       'cr.l3': 'Des indices pas à pas qui enseignent le raisonnement', 'cr.l4': 'En 7 langues, jouable hors ligne',
       'cr.more': 'Découvrir Crimeoku',
-      'cr.soon': 'Bientôt sur Google Play', 'cr.priv': 'Politique de confidentialité', 'foot.priv': 'Politique de confidentialité de Crimeoku'
+      'cr.soon': 'Disponible sur Google Play', 'cr.priv': 'Politique de confidentialité', 'foot.priv': 'Politique de confidentialité de Crimeoku'
     },
     de: {
       't.home': 'Bakersoft — Software-Studio', 't.priv': 'Crimeoku — Datenschutzerklärung',
@@ -99,7 +99,7 @@
       'cr.l1': 'Unendlich viele zufällig erzeugte Fälle, von 5×5 bis 24×24', 'cr.l2': 'Häuser, Museen, Zoos, Casinos, Burgen und mehr',
       'cr.l3': 'Hinweise Schritt für Schritt, die das Schlussfolgern beibringen', 'cr.l4': 'In 7 Sprachen, auch offline spielbar',
       'cr.more': 'Crimeoku entdecken',
-      'cr.soon': 'Bald bei Google Play', 'cr.priv': 'Datenschutzerklärung', 'foot.priv': 'Datenschutzerklärung von Crimeoku'
+      'cr.soon': 'Jetzt bei Google Play', 'cr.priv': 'Datenschutzerklärung', 'foot.priv': 'Datenschutzerklärung von Crimeoku'
     },
     it: {
       't.home': 'Bakersoft — Studio di software', 't.priv': 'Crimeoku — Informativa sulla privacy',
@@ -118,7 +118,7 @@
       'cr.l1': 'Casi infiniti generati a caso, da 5×5 a 24×24', 'cr.l2': 'Case, musei, zoo, casinò, castelli e altro ancora',
       'cr.l3': 'Indizi passo dopo passo che insegnano il ragionamento', 'cr.l4': 'In 7 lingue, si gioca anche offline',
       'cr.more': 'Scopri Crimeoku',
-      'cr.soon': 'Presto su Google Play', 'cr.priv': 'Informativa sulla privacy', 'foot.priv': 'Informativa sulla privacy di Crimeoku'
+      'cr.soon': 'Disponibile su Google Play', 'cr.priv': 'Informativa sulla privacy', 'foot.priv': 'Informativa sulla privacy di Crimeoku'
     },
     ro: {
       't.home': 'Bakersoft — Studio de software', 't.priv': 'Crimeoku — Politica de confidențialitate',
@@ -137,7 +137,7 @@
       'cr.l1': 'Cazuri nesfârșite generate aleatoriu, de la 5×5 la 24×24', 'cr.l2': 'Case, muzee, grădini zoologice, cazinouri, castele și multe altele',
       'cr.l3': 'Indicii pas cu pas care te învață raționamentul', 'cr.l4': 'În 7 limbi, se joacă și fără internet',
       'cr.more': 'Descoperă Crimeoku',
-      'cr.soon': 'În curând pe Google Play', 'cr.priv': 'Politica de confidențialitate', 'foot.priv': 'Politica de confidențialitate Crimeoku'
+      'cr.soon': 'Disponibil pe Google Play', 'cr.priv': 'Politica de confidențialitate', 'foot.priv': 'Politica de confidențialitate Crimeoku'
     }
   };
 
