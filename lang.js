@@ -160,6 +160,13 @@
   function apply() {
     document.querySelectorAll('[data-k]').forEach(function (el) { el.innerHTML = t(el.getAttribute('data-k')); });
     var tk = d.getAttribute('data-tk'); if (tk) document.title = t(tk);
+    /* Insignia oficial de Google Play, en el idioma de la página */
+    var GP = { en: 'en', es: 'es-419', pt: 'pt-br', fr: 'fr', de: 'de', it: 'it', ro: 'ro' };
+    document.querySelectorAll('[data-badge]').forEach(function (el) {
+      var u = 'https://play.google.com/intl/en_us/badges/static/images/badges/' + (GP[d.lang] || 'en') + '_badge_web_generic.png';
+      if (el.getAttribute('src') !== u) el.setAttribute('src', u);
+      el.onerror = function () { var a = el.parentNode; a.classList.add('gp-fb'); a.textContent = 'Google Play'; };
+    });
     /* Imágenes por idioma: data-img="img/{l}/play.webp" */
     document.querySelectorAll('[data-img]').forEach(function (el) { var u = el.getAttribute('data-img').replace('{l}', d.lang); if (el.getAttribute('src') !== u) el.setAttribute('src', u); });
     document.dispatchEvent(new CustomEvent('bk:lang', { detail: d.lang }));
